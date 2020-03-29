@@ -28,5 +28,6 @@ module.exports = {
     'require-jsdoc': 0,
     'no-console': 1,
     'max-len': [2, { code: 85, comments: 100 }],
+    'arrow-parens': 0,
   },
 };
