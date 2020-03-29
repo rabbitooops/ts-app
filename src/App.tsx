@@ -5,7 +5,9 @@ import './App.css';
 function App() {
   const [name] = useState('');
   useEffect(() => {
-    console.log(name);
+    setTimeout(() => {
+      console.log(name, '');
+    }, 1000);
   }, [name]);
   return (
     <div className="App">

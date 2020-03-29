@@ -8,7 +8,12 @@
     "test": "node scripts/test.js"
   },
   "husky": {
-    "pre-commit": ""
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{jsx,tsx,ts,js}": "eslint"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -146,6 +151,7 @@
     "eslint": "^6.8.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.19.0",
-    "husky": "^4.2.3"
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.9"
   }
 }
