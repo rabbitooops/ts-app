@@ -3,9 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const [name] = useState('');
+  const [name, setName] = useState('');
   useEffect(() => {
     setTimeout(() => {
+      setName('yes');
       // console.log(name);
     }, 1000);
   }, [name]);

@@ -144,6 +144,7 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "devDependencies": {
+    "@babel/plugin-transform-react-constant-elements": "^7.9.0",
     "@types/react": "^16.9.27",
     "@types/react-dom": "^16.9.5",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
