@@ -6,7 +6,7 @@ function App() {
   const [name] = useState('');
   useEffect(() => {
     setTimeout(() => {
-      console.log(name, '');
+      // console.log(name);
     }, 1000);
   }, [name]);
   return (
