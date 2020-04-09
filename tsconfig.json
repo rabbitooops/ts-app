@@ -21,6 +21,6 @@
   },
   "include": [
     "src",
-    "types"
+    "typings"
   ]
 }

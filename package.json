@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js src"
+    "analyze": "yarn build --analyze",
+    "test": "node scripts/test.js src",
+    "production": "yarn build && yarn serve -s build"
   },
   "husky": {
     "hooks": {
@@ -80,11 +82,6 @@
       "jest-watch-typeahead/testname"
     ]
   },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
@@ -147,12 +144,16 @@
     "@babel/plugin-transform-react-constant-elements": "^7.9.0",
     "@types/react": "^16.9.27",
     "@types/react-dom": "^16.9.5",
+    "@types/yargs": "^15.0.4",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
     "eslint": "^6.8.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.19.0",
     "husky": "^4.2.3",
-    "lint-staged": "^10.0.9"
+    "lint-staged": "^10.0.9",
+    "serve": "^11.3.0",
+    "webpack-bundle-analyzer": "^3.6.1",
+    "yargs": "^15.3.1"
   }
 }
